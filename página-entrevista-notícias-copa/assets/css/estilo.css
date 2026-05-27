@@ -1,0 +1,1263 @@
+@import url('https://fonts.googleapis.com/css2?family=Google+Sans+Flex:opsz,wght@6..144,1..1000&display=swap" rel="stylesheet');
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: 'Google Sans Flex';
+}
+
+:root {
+    --cor-principal: #02562F;
+    --detalhes: #F7CF07;
+    --branco: #FFFFFF;
+}
+
+header{
+    background-color: var(--cor-principal);
+    border: 3px solid var(--detalhes);
+    padding: 25px 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+body{
+    overflow-x: hidden;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.logo img{
+    width: 75px;
+}
+
+.texto-logo h1{
+    font-size: 52px;
+    line-height: 0.9;
+    color: var(--branco);
+}
+
+.texto-logo h2{
+    font-size: 62px;
+    line-height: 0.9;
+    color: var(--branco);
+}
+
+.texto-logo p {
+    color: var(--branco);
+    font-size: 20px;
+}
+
+.links {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.lado-direito{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+nav ul{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    list-style: none;
+    flex-wrap: wrap;
+}
+
+nav ul li a{
+    font-weight:500;
+    font-size: 20px;
+}
+
+nav a{
+    color: white;
+    font-weight: bold;
+}
+
+.inicio{
+    background-color: var(--detalhes);
+    color: var(--cor-principal);
+
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+
+.redes{
+    display: flex;
+    gap: 20px;
+}
+
+.links{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 35px;
+}
+
+.banner{
+    position: relative;
+    width: 100%;
+    height: 650px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 80px;
+    color: var(--branco);
+}
+
+.ney{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -2;
+}
+
+.banner {
+    gap: 10px;
+    margin-bottom: 50px;
+}
+
+.banner button{
+    width: fit-content;
+    background-color: var(--detalhes);
+    padding: 12px 22px;
+    border-radius: 10px;
+    margin-bottom: 25px;
+    cursor: pointer;
+}
+
+.banner button a{
+    color: var(--cor-principal);
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.banner button {
+    margin-top: 120px;
+} 
+
+.texto-neymar-banner{
+    max-width: 600px;
+}
+
+.texto-neymar-banner h3{
+    font-size: 60px;
+    line-height: 1;
+
+    font-weight: 800;
+}
+
+.texto-neymar-banner p{
+    margin-top: 20px;
+    font-size: 22px;
+    line-height: 1.5;
+    max-width: 700px;
+}
+
+.infos-autor{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-top: 35px;
+    flex-wrap: wrap;
+}
+
+.infos-autor img{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+
+.infos-autor p{
+    font-size: 18px;
+}
+
+
+main{
+    background-color: var(--branco);
+    padding: 40px;
+}
+
+.resumo-entrevista{
+    background-color: var(--branco);
+    border: 2px solid #cfcfcf;
+    border-radius: 10px;
+    padding: 25px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 25px;
+    max-width: 1300px;
+    margin: auto;
+}
+
+.resumo-entrevista aspas{
+    width: 90px;
+    height: 90px;
+} 
+
+.resumo-entrevista h4{
+    color: var(--cor-principal);
+    font-size: 28px;
+    font-weight: 800;
+    margin-bottom: 10px;
+}
+
+.resumo-entrevista p{
+    color: #222;
+    font-size: 18px;
+    line-height: 1.5;
+    font-size: 25px;
+}
+
+.resumo-entrevista-texto{
+    display: flex;
+    flex-direction: column;
+    max-width: 650px;
+}
+
+.video-entrevista{
+    background-color: var(--cor-principal);
+    color: var(--branco);
+    padding: 20px 30px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    min-width: 320px;
+}
+
+.video-entrevista p{
+    color: white;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.video-entrevista img{
+    width: 40px;
+}
+
+.entrevista-textos{
+    width: 55%;
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+    padding: 50px 70px;
+}
+
+.entrevista-pt1,
+.entrevista-pt2,
+.entrevista-pt3,
+.entrevista-pt4 {
+
+    border-left: 8px solid var(--cor-principal);
+    padding-left: 20px;
+}
+
+
+.entrevista-pt1 h5,
+.entrevista-pt2 h5,
+.entrevista-pt3 h5,
+.entrevista-pt4 h5 {
+
+    color: var(--cor-principal);
+    font-size: 24px;
+    font-weight: 800;
+    line-height: 1.4;
+    margin-bottom: 15px;
+}
+
+.entrevista-pt1 p,
+.entrevista-pt2 p,
+.entrevista-pt3 p,
+.entrevista-pt4 p {
+
+    color: #222;
+    font-size: 21px;
+    line-height: 1.6;
+}
+
+.imagens-entrevista {
+    width: 40%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-left: auto;
+    margin-right: 70px;
+    margin-top: -860px;
+}
+
+.img-principal {
+    width: 100%;
+    border-radius: 15px;
+}
+
+.imagens-entrevista .aspas {
+    width: 60px;
+    position: absolute;
+    top: 25px;
+    left: 25px;
+}
+
+.frase-neymar {
+    position: absolute;
+    top: 45px;
+    left: 85px;
+    color: var(--branco);
+    font-size: 34px;
+    font-weight: 800;
+    line-height: 1.2;
+    max-width: 500px;
+}
+
+.nome-neymar {
+    position: absolute;
+    top: 320px;
+    left: 85px;
+    color: var(--detalhes);
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.trio-imgs-entrevista {
+    display: flex;
+    gap: 15px;
+}
+
+.img-trio-1,
+.img-trio-2,
+.img-trio-3 {
+
+    width: 32%;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.mais-entrevistas{
+    margin-top: 80px;
+
+    display: flex;
+    flex-wrap: wrap;
+    gap: 28px;
+}
+
+.title-entrevistas{
+    width: 100%;
+
+    color: #17304B;
+    font-size: 42px;
+    font-weight: 800;
+}
+
+.title-entrevistas::after{
+    content: "";
+    display: block;
+
+    width: 60px;
+    height: 6px;
+
+    background-color: var(--detalhes);
+    border-radius: 10px;
+
+    margin-top: 10px;
+}
+
+.entrevista1,
+.entrevista2,
+.entrevista3,
+.entrevista4,
+.entrevista5{
+
+    width: 18.2%;
+
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.entrevista1:hover,
+.entrevista2:hover,
+.entrevista3:hover,
+.entrevista4:hover,
+.entrevista5:hover{
+
+    transform: translateY(-6px);
+}
+
+.entrevista1 img,
+.entrevista2 img,
+.entrevista3 img,
+.entrevista4 img,
+.entrevista5 img{
+
+    width: 100%;
+    height: 150px;
+
+    object-fit: cover;
+    border-radius: 18px;
+}
+
+.titulo-entrevista{
+    color: #17304B;
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 1.3;
+}
+
+.data-box{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 5px;
+}
+
+.img-data{
+    width: 18px !important;
+    height: 18px !important;
+    border-radius: 0 !important;
+}
+
+.data-entrevista{
+    color: #9B9B9B;
+    font-size: 18px;
+}
+
+footer{
+    background-color: var(--cor-principal);
+
+    border-top: 4px solid var(--detalhes);
+
+    margin-top: 80px;
+    padding: 50px 60px 25px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+footer .logo{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+footer .logo img{
+    width: 85px;
+}
+
+footer .texto-logo h1{
+    color: var(--branco);
+    font-size: 55px;
+    line-height: 0.9;
+}
+
+footer .texto-logo h2{
+    color: var(--branco);
+    font-size: 70px;
+    line-height: 0.9;
+}
+
+footer .texto-logo p{
+    color: var(--branco);
+    font-size: 16px;
+}
+
+.infos-copa-news{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 60px;
+}
+
+.sobre-nos{
+    max-width: 350px;
+}
+
+.sobre-nos h4,
+.navegacao h4,
+.siga-nos h4{
+
+    color: var(--branco);
+    font-size: 22px;
+    font-weight: 800;
+
+    margin-bottom: 18px;
+}
+
+.sobre-nos p{
+    color: #E6E6E6;
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.navegacao ul{
+    list-style: none;
+
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.navegacao a{
+    color: var(--branco);
+    font-size: 18px;
+    font-weight: 500;
+
+    transition: 0.3s;
+}
+
+.navegacao a:hover{
+    color: var(--detalhes);
+}
+
+.redes-footer{
+    display: flex;
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.redes-footer img{
+    width: 35px;
+
+    transition: 0.3s;
+}
+
+.redes-footer img:hover{
+    transform: scale(1.1);
+}
+
+.copyright{
+    border-top: 1px solid rgba(255,255,255,0.2);
+
+    padding-top: 25px;
+
+    text-align: center;
+
+    color: var(--branco);
+    font-size: 16px;
+}
+
+@media (max-width: 1400px){
+
+    header{
+        padding: 25px 40px;
+    }
+
+    .texto-logo h1{
+        font-size: 45px;
+    }
+
+    .texto-logo h2{
+        font-size: 55px;
+    }
+
+    nav ul{
+        gap: 20px;
+    }
+
+    .banner{
+        padding-left: 50px;
+    }
+
+    .texto-neymar-banner h3{
+        font-size: 50px;
+    }
+
+    .texto-neymar-banner p{
+        font-size: 20px;
+    }
+
+    .entrevista-textos{
+        width: 55%;
+    }
+
+    .imagens-entrevista{
+        width: 38%;
+        margin-top: -780px;
+    }
+
+    .frase-neymar{
+        font-size: 28px;
+    }
+
+    .nome-neymar{
+        top: 280px;
+    }
+
+    .entrevista1,
+    .entrevista2,
+    .entrevista3,
+    .entrevista4,
+    .entrevista5{
+        width: 18%;
+    }
+
+    .titulo-entrevista{
+        font-size: 19px;
+    }
+}
+
+@media (max-width: 1200px){
+
+    header{
+        flex-direction: column;
+        align-items: center;
+        gap: 35px;
+    }
+
+    .links{
+        align-items: center;
+    }
+
+    nav ul{
+        justify-content: center;
+    }
+
+    .banner{
+        height: 550px;
+    }
+
+    .texto-neymar-banner h3{
+        font-size: 42px;
+    }
+
+    .texto-neymar-banner p{
+        font-size: 18px;
+        max-width: 500px;
+    }
+
+    .resumo-entrevista{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .video-entrevista{
+        width: 100%;
+        justify-content: center;
+    }
+
+    .entrevista-textos{
+        width: 100%;
+        padding: 40px 20px;
+    }
+
+    .imagens-entrevista{
+        width: 100%;
+        margin: 50px auto 0;
+    }
+
+    .frase-neymar{
+        font-size: 40px;
+    }
+
+    .nome-neymar{
+        top: 370px;
+    }
+
+    .mais-entrevistas{
+        justify-content: center;
+    }
+
+    .entrevista1,
+    .entrevista2,
+    .entrevista3,
+    .entrevista4,
+    .entrevista5{
+        width: 30%;
+    }
+
+    .infos-copa-news{
+        flex-wrap: wrap;
+        gap: 40px;
+    }
+}
+
+@media (max-width: 992px){
+
+    .banner{
+        height: 500px;
+        padding-left: 35px;
+    }
+
+    .banner button{
+        margin-top: 70px;
+    }
+
+    .texto-neymar-banner h3{
+        font-size: 36px;
+    }
+
+    .texto-neymar-banner p{
+        font-size: 17px;
+    }
+
+    .infos-autor p{
+        font-size: 16px;
+    }
+
+    .resumo-entrevista h4{
+        font-size: 24px;
+    }
+
+    .resumo-entrevista p{
+        font-size: 18px;
+    }
+
+    .entrevista-pt1 h5,
+    .entrevista-pt2 h5,
+    .entrevista-pt3 h5,
+    .entrevista-pt4 h5{
+        font-size: 22px;
+    }
+
+    .entrevista-pt1 p,
+    .entrevista-pt2 p,
+    .entrevista-pt3 p,
+    .entrevista-pt4 p{
+        font-size: 18px;
+    }
+
+    .frase-neymar{
+        font-size: 32px;
+        max-width: 400px;
+    }
+
+    .nome-neymar{
+        top: 300px;
+    }
+
+    .entrevista1,
+    .entrevista2,
+    .entrevista3,
+    .entrevista4,
+    .entrevista5{
+        width: 45%;
+    }
+
+    footer{
+        padding: 40px 30px;
+    }
+}
+
+@media (max-width: 768px){
+
+    header{
+        padding: 25px 20px;
+    }
+
+    .logo{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .texto-logo h1{
+        font-size: 40px;
+    }
+
+    .texto-logo h2{
+        font-size: 50px;
+    }
+
+    .texto-logo p{
+        font-size: 14px;
+    }
+
+    .links{
+        width: 100%;
+    }
+
+    .redes{
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    nav ul{
+        gap: 15px;
+    }
+
+    nav ul li a{
+        font-size: 16px;
+    }
+
+    .inicio{
+        padding: 8px 16px;
+    }
+
+    .banner{
+        height: 450px;
+        padding: 20px;
+    }
+
+    .texto-neymar-banner h3{
+        font-size: 30px;
+    }
+
+    .texto-neymar-banner p{
+        font-size: 15px;
+    }
+
+    .infos-autor{
+        gap: 10px;
+    }
+
+    .infos-autor img{
+        width: 45px;
+        height: 45px;
+    }
+
+    main{
+        padding: 20px;
+    }
+
+    .resumo-entrevista{
+        padding: 20px;
+    }
+
+    .video-entrevista{
+        min-width: unset;
+        width: 100%;
+    }
+
+    .video-entrevista p{
+        font-size: 18px;
+    }
+
+    .entrevista-textos{
+        padding: 30px 0;
+    }
+
+    .frase-neymar{
+        position: absolute;
+        top: 30px;
+        left: 30px;
+
+        font-size: 24px;
+        max-width: 300px;
+    }
+
+    .nome-neymar{
+        top: 230px;
+        left: 30px;
+    }
+
+    .trio-imgs-entrevista{
+        flex-direction: column;
+    }
+
+    .img-trio-1,
+    .img-trio-2,
+    .img-trio-3{
+        width: 100%;
+    }
+
+    .entrevista1,
+    .entrevista2,
+    .entrevista3,
+    .entrevista4,
+    .entrevista5{
+        width: 100%;
+    }
+
+    .title-entrevistas{
+        font-size: 34px;
+    }
+
+    .titulo-entrevista{
+        font-size: 20px;
+    }
+
+    .infos-copa-news{
+        flex-direction: column;
+    }
+
+    footer .logo{
+        align-items: center;
+    }
+}
+
+@media (max-width: 480px){
+
+    .banner{
+        height: 380px;
+    }
+
+    .banner button{
+        padding: 10px 15px;
+    }
+
+    .banner button a{
+        font-size: 12px;
+    }
+
+    .texto-neymar-banner h3{
+        font-size: 24px;
+    }
+
+    .texto-neymar-banner p{
+        font-size: 14px;
+    }
+
+    .infos-autor p{
+        font-size: 13px;
+    }
+
+    .resumo-entrevista h4{
+        font-size: 20px;
+    }
+
+    .resumo-entrevista p{
+        font-size: 15px;
+    }
+
+    .video-entrevista{
+        padding: 15px;
+    }
+
+    .video-entrevista p{
+        font-size: 15px;
+    }
+
+    .video-entrevista img{
+        width: 30px;
+    }
+
+    .entrevista-pt1 h5,
+    .entrevista-pt2 h5,
+    .entrevista-pt3 h5,
+    .entrevista-pt4 h5{
+        font-size: 18px;
+    }
+
+    .entrevista-pt1 p,
+    .entrevista-pt2 p,
+    .entrevista-pt3 p,
+    .entrevista-pt4 p{
+        font-size: 15px;
+    }
+
+    .frase-neymar{
+        font-size: 18px;
+        max-width: 220px;
+    }
+
+    .nome-neymar{
+        font-size: 18px;
+        top: 170px;
+    }
+
+    .title-entrevistas{
+        font-size: 28px;
+    }
+
+    .titulo-entrevista{
+        font-size: 17px;
+    }
+
+    .data-entrevista{
+        font-size: 14px;
+    }
+
+    footer{
+        padding: 35px 20px;
+    }
+
+    .sobre-nos p,
+    .navegacao a{
+        font-size: 15px;
+    }
+
+    .copyright{
+        font-size: 13px;
+    }
+}
+
+@media (min-width: 2560px){
+
+    header{
+        padding: 40px 120px;
+    }
+
+    .logo img{
+        width: 120px;
+    }
+
+    .texto-logo h1{
+        font-size: 80px;
+    }
+
+    .texto-logo h2{
+        font-size: 100px;
+    }
+
+    .texto-logo p{
+        font-size: 28px;
+    }
+
+    .redes img{
+        width: 45px;
+    }
+
+    nav ul{
+        gap: 45px;
+    }
+
+    nav ul li a{
+        font-size: 28px;
+    }
+
+    .inicio{
+        padding: 14px 28px;
+        border-radius: 14px;
+    }
+
+    .banner{
+        height: 1000px;
+        padding-left: 140px;
+    }
+
+    .banner button{
+        padding: 18px 35px;
+        border-radius: 14px;
+    }
+
+    .banner button a{
+        font-size: 24px;
+    }
+
+    .texto-neymar-banner{
+        max-width: 900px;
+    }
+
+    .texto-neymar-banner h3{
+        font-size: 90px;
+    }
+
+    .texto-neymar-banner p{
+        font-size: 34px;
+        max-width: 900px;
+    }
+
+    .infos-autor{
+        gap: 20px;
+        margin-top: 50px;
+    }
+
+    .infos-autor img{
+        width: 90px;
+        height: 90px;
+    }
+
+    .infos-autor p{
+        font-size: 28px;
+    }
+
+    main{
+        padding: 80px 120px;
+    }
+
+    .resumo-entrevista{
+        max-width: 2200px;
+        padding: 40px 50px;
+        border-radius: 18px;
+    }
+
+    .resumo-entrevista h4{
+        font-size: 42px;
+    }
+
+    .resumo-entrevista p{
+        font-size: 32px;
+    }
+
+    .video-entrevista{
+        padding: 35px 45px;
+        border-radius: 14px;
+    }
+
+    .video-entrevista p{
+        font-size: 30px;
+    }
+
+    .video-entrevista img{
+        width: 55px;
+    }
+
+    .entrevista-textos{
+        padding: 80px 100px;
+        gap: 50px;
+    }
+
+    .entrevista-pt1,
+    .entrevista-pt2,
+    .entrevista-pt3,
+    .entrevista-pt4{
+        padding-left: 35px;
+        border-left: 12px solid var(--cor-principal);
+    }
+
+    .entrevista-pt1 h5,
+    .entrevista-pt2 h5,
+    .entrevista-pt3 h5,
+    .entrevista-pt4 h5{
+        font-size: 40px;
+    }
+
+    .entrevista-pt1 p,
+    .entrevista-pt2 p,
+    .entrevista-pt3 p,
+    .entrevista-pt4 p{
+        font-size: 30px;
+        line-height: 1.8;
+    }
+
+    .imagens-entrevista{
+        width: 42%;
+        margin-top: -1250px;
+    }
+
+    .frase-neymar{
+        font-size: 52px;
+        max-width: 700px;
+        top: 70px;
+        left: 120px;
+    }
+
+    .nome-neymar{
+        font-size: 36px;
+        top: 500px;
+        left: 120px;
+    }
+
+    .imagens-entrevista .aspas{
+        width: 90px;
+        top: 40px;
+        left: 40px;
+    }
+
+    .trio-imgs-entrevista{
+        gap: 25px;
+    }
+
+    .img-trio-1,
+    .img-trio-2,
+    .img-trio-3{
+        border-radius: 20px;
+    }
+
+    .mais-entrevistas{
+        margin-top: 120px;
+        gap: 40px;
+    }
+
+    .title-entrevistas{
+        font-size: 60px;
+    }
+
+    .title-entrevistas::after{
+        width: 90px;
+        height: 8px;
+    }
+
+    .entrevista1,
+    .entrevista2,
+    .entrevista3,
+    .entrevista4,
+    .entrevista5{
+        width: 18%;
+    }
+
+    .entrevista1 img,
+    .entrevista2 img,
+    .entrevista3 img,
+    .entrevista4 img,
+    .entrevista5 img{
+        height: 240px;
+        border-radius: 22px;
+    }
+
+    .titulo-entrevista{
+        font-size: 30px;
+    }
+
+    .img-data{
+        width: 24px !important;
+        height: 24px !important;
+    }
+
+    .data-entrevista{
+        font-size: 24px;
+    }
+
+    footer{
+        padding: 70px 120px 40px;
+        gap: 60px;
+    }
+
+    footer .logo img{
+        width: 120px;
+    }
+
+    footer .texto-logo h1{
+        font-size: 75px;
+    }
+
+    footer .texto-logo h2{
+        font-size: 95px;
+    }
+
+    footer .texto-logo p{
+        font-size: 24px;
+    }
+
+    .sobre-nos{
+        max-width: 550px;
+    }
+
+    .sobre-nos h4,
+    .navegacao h4,
+    .siga-nos h4{
+        font-size: 34px;
+    }
+
+    .sobre-nos p{
+        font-size: 26px;
+    }
+
+    .navegacao a{
+        font-size: 26px;
+    }
+
+    .redes-footer img{
+        width: 50px;
+    }
+
+    .copyright{
+        font-size: 22px;
+        padding-top: 35px;
+    }
+}
